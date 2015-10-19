@@ -10,12 +10,13 @@
 
 @implementation MBSheetAction
 
-+ (MBSheetAction *)actionWithTitle:(NSString *)title thumbnail:(UIImage *)thumbnail handler:(MBActionHandler)handler
++ (MBSheetAction *)actionWithTitle:(NSString *)title thumbnail:(UIImage *)thumbnail style:(MBSheetActionStyle)style handler:(MBActionHandler)handler
 {
     MBSheetAction *action = [[MBSheetAction alloc] init];
     action.title = title;
     action.thumbnail = thumbnail;
     action.handler = handler;
+    action.style = style;
     return action;
 }
 

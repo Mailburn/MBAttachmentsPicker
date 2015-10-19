@@ -130,10 +130,7 @@
 				4040889C1BD50FD600606846 /* AttachmentsPicker */,
 				404088951BD50F8100606846 /* PreviewController */,
 				404088941BD50F7B00606846 /* SheetController */,
-				4040885E1BD50B7E00606846 /* AppDelegate.h */,
-				4040885F1BD50B7E00606846 /* AppDelegate.m */,
-				404088611BD50B7E00606846 /* ViewController.h */,
-				404088621BD50B7E00606846 /* ViewController.m */,
+				404088BC1BD571A300606846 /* Example */,
 				404088641BD50B7E00606846 /* Main.storyboard */,
 				404088671BD50B7E00606846 /* Assets.xcassets */,
 				404088691BD50B7E00606846 /* LaunchScreen.storyboard */,
@@ -217,6 +214,17 @@
 			);
 			name = OCMock;
 			path = Vendor/OCMock;
+			sourceTree = "<group>";
+		};
+		404088BC1BD571A300606846 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				4040885E1BD50B7E00606846 /* AppDelegate.h */,
+				4040885F1BD50B7E00606846 /* AppDelegate.m */,
+				404088611BD50B7E00606846 /* ViewController.h */,
+				404088621BD50B7E00606846 /* ViewController.m */,
+			);
+			name = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

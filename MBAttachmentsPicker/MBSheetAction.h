@@ -11,11 +11,19 @@
 
 typedef void(^MBActionHandler)();
 
+typedef NS_ENUM(NSInteger, MBSheetActionStyle)
+{
+    MBSheetActionStyleDefault = 0,
+    MBSheetActionStyleCancel = 1,
+    MBSheetActionStyleDestructive = 2
+};
+
 @interface MBSheetAction : NSObject
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) UIImage *thumbnail;
 @property (nonatomic, strong) MBActionHandler handler;
+@property (nonatomic, assign) MBSheetActionStyle style;
 
-+ (MBSheetAction *)actionWithTitle:(NSString *)title thumbnail:(UIImage *)thumbnail handler:(MBActionHandler)handler;
++ (MBSheetAction *)actionWithTitle:(NSString *)title thumbnail:(UIImage *)thumbnail style:(MBSheetActionStyle)style handler:(MBActionHandler)handler;
 
 @end
