@@ -13,8 +13,12 @@
 		404088661BD50B7E00606846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404088641BD50B7E00606846 /* Main.storyboard */; };
 		404088681BD50B7E00606846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 404088671BD50B7E00606846 /* Assets.xcassets */; };
 		4040886B1BD50B7E00606846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404088691BD50B7E00606846 /* LaunchScreen.storyboard */; };
-		404088761BD50B7F00606846 /* MBAttachmentsPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 404088751BD50B7F00606846 /* MBAttachmentsPickerTests.m */; };
 		404088811BD50B7F00606846 /* MBAttachmentsPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 404088801BD50B7F00606846 /* MBAttachmentsPickerUITests.m */; };
+		404088901BD50D4900606846 /* MBAttachmentsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4040888F1BD50D4900606846 /* MBAttachmentsPickerController.m */; settings = {ASSET_TAGS = (); }; };
+		404088931BD50DB600606846 /* MBSheetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 404088921BD50DB600606846 /* MBSheetAction.m */; settings = {ASSET_TAGS = (); }; };
+		404088981BD50F9300606846 /* MBSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404088971BD50F9300606846 /* MBSheetController.m */; settings = {ASSET_TAGS = (); }; };
+		4040889B1BD50FA200606846 /* MBPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4040889A1BD50FA200606846 /* MBPreviewController.m */; settings = {ASSET_TAGS = (); }; };
+		4040889F1BD50FF500606846 /* MBAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4040889E1BD50FF500606846 /* MBAttachment.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +50,20 @@
 		4040886A1BD50B7E00606846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4040886C1BD50B7E00606846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		404088711BD50B7F00606846 /* MBAttachmentsPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBAttachmentsPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		404088751BD50B7F00606846 /* MBAttachmentsPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAttachmentsPickerTests.m; sourceTree = "<group>"; };
 		404088771BD50B7F00606846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4040887C1BD50B7F00606846 /* MBAttachmentsPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBAttachmentsPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		404088801BD50B7F00606846 /* MBAttachmentsPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAttachmentsPickerUITests.m; sourceTree = "<group>"; };
 		404088821BD50B7F00606846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4040888E1BD50D4900606846 /* MBAttachmentsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAttachmentsPickerController.h; sourceTree = "<group>"; };
+		4040888F1BD50D4900606846 /* MBAttachmentsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAttachmentsPickerController.m; sourceTree = "<group>"; };
+		404088911BD50DB600606846 /* MBSheetAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSheetAction.h; sourceTree = "<group>"; };
+		404088921BD50DB600606846 /* MBSheetAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSheetAction.m; sourceTree = "<group>"; };
+		404088961BD50F9300606846 /* MBSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSheetController.h; sourceTree = "<group>"; };
+		404088971BD50F9300606846 /* MBSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSheetController.m; sourceTree = "<group>"; };
+		404088991BD50FA200606846 /* MBPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPreviewController.h; sourceTree = "<group>"; };
+		4040889A1BD50FA200606846 /* MBPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPreviewController.m; sourceTree = "<group>"; };
+		4040889D1BD50FF500606846 /* MBAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAttachment.h; sourceTree = "<group>"; };
+		4040889E1BD50FF500606846 /* MBAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAttachment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +114,9 @@
 		4040885A1BD50B7E00606846 /* MBAttachmentsPicker */ = {
 			isa = PBXGroup;
 			children = (
+				4040889C1BD50FD600606846 /* AttachmentsPicker */,
+				404088951BD50F8100606846 /* PreviewController */,
+				404088941BD50F7B00606846 /* SheetController */,
 				4040885E1BD50B7E00606846 /* AppDelegate.h */,
 				4040885F1BD50B7E00606846 /* AppDelegate.m */,
 				404088611BD50B7E00606846 /* ViewController.h */,
@@ -125,7 +141,6 @@
 		404088741BD50B7F00606846 /* MBAttachmentsPickerTests */ = {
 			isa = PBXGroup;
 			children = (
-				404088751BD50B7F00606846 /* MBAttachmentsPickerTests.m */,
 				404088771BD50B7F00606846 /* Info.plist */,
 			);
 			path = MBAttachmentsPickerTests;
@@ -138,6 +153,37 @@
 				404088821BD50B7F00606846 /* Info.plist */,
 			);
 			path = MBAttachmentsPickerUITests;
+			sourceTree = "<group>";
+		};
+		404088941BD50F7B00606846 /* SheetController */ = {
+			isa = PBXGroup;
+			children = (
+				404088961BD50F9300606846 /* MBSheetController.h */,
+				404088971BD50F9300606846 /* MBSheetController.m */,
+			);
+			name = SheetController;
+			sourceTree = "<group>";
+		};
+		404088951BD50F8100606846 /* PreviewController */ = {
+			isa = PBXGroup;
+			children = (
+				404088991BD50FA200606846 /* MBPreviewController.h */,
+				4040889A1BD50FA200606846 /* MBPreviewController.m */,
+			);
+			name = PreviewController;
+			sourceTree = "<group>";
+		};
+		4040889C1BD50FD600606846 /* AttachmentsPicker */ = {
+			isa = PBXGroup;
+			children = (
+				4040888E1BD50D4900606846 /* MBAttachmentsPickerController.h */,
+				4040888F1BD50D4900606846 /* MBAttachmentsPickerController.m */,
+				404088911BD50DB600606846 /* MBSheetAction.h */,
+				404088921BD50DB600606846 /* MBSheetAction.m */,
+				4040889D1BD50FF500606846 /* MBAttachment.h */,
+				4040889E1BD50FF500606846 /* MBAttachment.m */,
+			);
+			name = AttachmentsPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +317,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				404088631BD50B7E00606846 /* ViewController.m in Sources */,
+				4040889F1BD50FF500606846 /* MBAttachment.m in Sources */,
+				4040889B1BD50FA200606846 /* MBPreviewController.m in Sources */,
 				404088601BD50B7E00606846 /* AppDelegate.m in Sources */,
 				4040885D1BD50B7E00606846 /* main.m in Sources */,
+				404088931BD50DB600606846 /* MBSheetAction.m in Sources */,
+				404088981BD50F9300606846 /* MBSheetController.m in Sources */,
+				404088901BD50D4900606846 /* MBAttachmentsPickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +331,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				404088761BD50B7F00606846 /* MBAttachmentsPickerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +548,7 @@
 				404088871BD50B7F00606846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		404088881BD50B7F00606846 /* Build configuration list for PBXNativeTarget "MBAttachmentsPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +557,7 @@
 				4040888A1BD50B7F00606846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4040888B1BD50B7F00606846 /* Build configuration list for PBXNativeTarget "MBAttachmentsPickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +566,7 @@
 				4040888D1BD50B7F00606846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
