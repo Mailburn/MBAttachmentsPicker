@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MBPickerProtocols.h"
 
-@interface MBPickerAnimationController : NSObject
+@interface MBPickerAnimationController : NSObject <MBPickerAnimationProtocol>
 
 @end

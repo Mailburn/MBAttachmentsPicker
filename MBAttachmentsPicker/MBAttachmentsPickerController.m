@@ -7,7 +7,7 @@
 //
 
 #import "MBAttachmentsPickerController.h"
-#import "MBPickerProtocols.h"
+#import "MBPickerAnimationController.h"
 
 @interface MBAttachmentsPickerController () <UIViewControllerTransitioningDelegate>
 @property (nonatomic, strong) UIView *backgroundView;
@@ -44,7 +44,9 @@
 
 - (void)initialize
 {
+    self.animationController = [[MBPickerAnimationController alloc] init];
     self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    self.transitioningDelegate = self;
 }
 
 #pragma mark - Loading cycle
@@ -79,6 +81,14 @@
 
 - (void)addAction:(MBSheetAction *)action
 {
+    
+}
+
+#pragma mark - UIViewControllerTransitionDelegate
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    return self.animationController;
     
 }
 
