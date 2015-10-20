@@ -21,6 +21,7 @@
 		4040889F1BD50FF500606846 /* MBAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4040889E1BD50FF500606846 /* MBAttachment.m */; settings = {ASSET_TAGS = (); }; };
 		404088BB1BD51CE300606846 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 404088AF1BD51CE300606846 /* libOCMock.a */; settings = {ASSET_TAGS = (); }; };
 		4041F2E71BD6C6A3006136FB /* MBPickerAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041F2E61BD6C6A3006136FB /* MBPickerAnimationController.m */; settings = {ASSET_TAGS = (); }; };
+		4041F2EC1BD6D674006136FB /* MBFunctionalExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041F2EA1BD6D674006136FB /* MBFunctionalExtensions.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		4041F2E51BD6C6A3006136FB /* MBPickerAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPickerAnimationController.h; sourceTree = "<group>"; };
 		4041F2E61BD6C6A3006136FB /* MBPickerAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPickerAnimationController.m; sourceTree = "<group>"; };
 		4041F2E81BD6C6D7006136FB /* MBPickerProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBPickerProtocols.h; sourceTree = "<group>"; };
+		4041F2EA1BD6D674006136FB /* MBFunctionalExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBFunctionalExtensions.m; path = MBAttachmentsPicker/Vendor/MBFunctionalExtensions.m; sourceTree = "<group>"; };
+		4041F2EB1BD6D674006136FB /* MBFunctionalExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBFunctionalExtensions.h; path = MBAttachmentsPicker/Vendor/MBFunctionalExtensions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 		4040884F1BD50B7E00606846 = {
 			isa = PBXGroup;
 			children = (
+				4041F2E91BD6D617006136FB /* Vendor */,
 				4040885A1BD50B7E00606846 /* MBAttachmentsPicker */,
 				404088741BD50B7F00606846 /* MBAttachmentsPickerTests */,
 				4040887F1BD50B7F00606846 /* MBAttachmentsPickerUITests */,
@@ -232,6 +236,15 @@
 				404088621BD50B7E00606846 /* ViewController.m */,
 			);
 			name = Example;
+			sourceTree = "<group>";
+		};
+		4041F2E91BD6D617006136FB /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				4041F2EB1BD6D674006136FB /* MBFunctionalExtensions.h */,
+				4041F2EA1BD6D674006136FB /* MBFunctionalExtensions.m */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				404088631BD50B7E00606846 /* ViewController.m in Sources */,
+				4041F2EC1BD6D674006136FB /* MBFunctionalExtensions.m in Sources */,
 				4040889F1BD50FF500606846 /* MBAttachment.m in Sources */,
 				4040889B1BD50FA200606846 /* MBPreviewController.m in Sources */,
 				404088601BD50B7E00606846 /* AppDelegate.m in Sources */,
