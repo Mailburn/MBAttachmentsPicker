@@ -10,5 +10,4 @@
 #import "MBPickerProtocols.h"
 
 @interface MBPickerAnimationController : NSObject <MBPickerAnimationProtocol>
-
 @end

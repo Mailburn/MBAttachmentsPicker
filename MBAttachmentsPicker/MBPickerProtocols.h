@@ -2,10 +2,11 @@
 @class UIViewControllerContextTransitioning;
 
 @protocol MBPickerAnimationProtocol <NSObject, UIViewControllerAnimatedTransitioning>
-@property (nonatomic, weak) UIViewController *animatedController;
+@property (nonatomic, weak) MBAttachmentsPickerController *animatedController;
 @property (nonatomic, assign) BOOL presenting;
-- (void)animatePresentationInContext:(UIViewControllerContextTransitioning *)context;
-- (void)animateDismissalInContext:(UIViewControllerContextTransitioning *)context;
+- (void)animatePresentationInContext:(id<UIViewControllerContextTransitioning>)context;
+- (void)animateDismissalInContext:(id<UIViewControllerContextTransitioning>)context;
 @optional
-- (instancetype)initWithAnimatedController:(UIViewController *)animatedController presenting:(BOOL)presenting;
+- (instancetype)initWithAnimatedController:(MBAttachmentsPickerController *)animatedController;
+- (instancetype)initWithAnimatedController:(MBAttachmentsPickerController *)animatedController presenting:(BOOL)presenting;
 @end

@@ -45,6 +45,7 @@
 - (void)initialize
 {
     self.animationController = [[MBPickerAnimationController alloc] init];
+    self.animationController.animatedController = self;
     self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     self.transitioningDelegate = self;
 }
@@ -88,8 +89,14 @@
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
+    self.animationController.presenting = YES;
     return self.animationController;
-    
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    self.animationController.presenting = NO;
+    return self.animationController;
 }
 
 @end
