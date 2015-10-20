@@ -25,7 +25,7 @@
     return self;
 }
 
-- (void)animateDismissalInContext:(id<UIViewControllerContextTransitioning>)context
+- (void)animatePresentationInContext:(id<UIViewControllerContextTransitioning>)context
 {
     UIView *containerView = [context containerView];
     [containerView addSubview:self.animatedController.view];
@@ -37,7 +37,7 @@
     }];
 }
 
-- (void)animatePresentationInContext:(id<UIViewControllerContextTransitioning>)context
+- (void)animateDismissalInContext:(id<UIViewControllerContextTransitioning>)context
 {
     [UIView animateWithDuration:[self transitionDuration:context] delay:0.f options:UIViewAnimationOptionCurveEaseIn animations:^{
         self.animatedController.view.alpha = 0.f;
