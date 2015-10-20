@@ -7,14 +7,47 @@
 //
 
 #import "MBAttachmentsPickerController.h"
+#import "MBPickerProtocols.h"
 
-@interface MBAttachmentsPickerController ()
+@interface MBAttachmentsPickerController () <UIViewControllerTransitioningDelegate>
 @property (nonatomic, strong) UIView *backgroundView;
+@property (nonatomic, strong) id<MBPickerAnimationProtocol> animationController;
 @end
 
 @implementation MBAttachmentsPickerController
 
-#pragma mark - 
+#pragma mark - Initialization
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        [self initialize];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+        [self initialize];
+    }
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        [self initialize];
+    }
+    return self;
+}
+
+- (void)initialize
+{
+    self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+}
+
+#pragma mark - Loading cycle
 
 - (void)loadView
 {

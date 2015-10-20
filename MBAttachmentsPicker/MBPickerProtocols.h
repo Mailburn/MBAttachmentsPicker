@@ -1,0 +1,3 @@
+@protocol MBPickerAnimationProtocol <NSObject>
+
+@end

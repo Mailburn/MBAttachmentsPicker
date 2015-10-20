@@ -20,6 +20,7 @@
 		4040889B1BD50FA200606846 /* MBPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4040889A1BD50FA200606846 /* MBPreviewController.m */; settings = {ASSET_TAGS = (); }; };
 		4040889F1BD50FF500606846 /* MBAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4040889E1BD50FF500606846 /* MBAttachment.m */; settings = {ASSET_TAGS = (); }; };
 		404088BB1BD51CE300606846 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 404088AF1BD51CE300606846 /* libOCMock.a */; settings = {ASSET_TAGS = (); }; };
+		4041F2E71BD6C6A3006136FB /* MBPickerAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041F2E61BD6C6A3006136FB /* MBPickerAnimationController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,9 @@
 		404088B81BD51CE300606846 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		404088B91BD51CE300606846 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
 		404088BA1BD51CE300606846 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		4041F2E51BD6C6A3006136FB /* MBPickerAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPickerAnimationController.h; sourceTree = "<group>"; };
+		4041F2E61BD6C6A3006136FB /* MBPickerAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPickerAnimationController.m; sourceTree = "<group>"; };
+		4041F2E81BD6C6D7006136FB /* MBPickerProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBPickerProtocols.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,9 @@
 		4040889C1BD50FD600606846 /* AttachmentsPicker */ = {
 			isa = PBXGroup;
 			children = (
+				4041F2E81BD6C6D7006136FB /* MBPickerProtocols.h */,
+				4041F2E51BD6C6A3006136FB /* MBPickerAnimationController.h */,
+				4041F2E61BD6C6A3006136FB /* MBPickerAnimationController.m */,
 				4040888E1BD50D4900606846 /* MBAttachmentsPickerController.h */,
 				4040888F1BD50D4900606846 /* MBAttachmentsPickerController.m */,
 				404088911BD50DB600606846 /* MBSheetAction.h */,
@@ -362,6 +369,7 @@
 				4040889B1BD50FA200606846 /* MBPreviewController.m in Sources */,
 				404088601BD50B7E00606846 /* AppDelegate.m in Sources */,
 				4040885D1BD50B7E00606846 /* main.m in Sources */,
+				4041F2E71BD6C6A3006136FB /* MBPickerAnimationController.m in Sources */,
 				404088931BD50DB600606846 /* MBSheetAction.m in Sources */,
 				404088981BD50F9300606846 /* MBSheetController.m in Sources */,
 				404088901BD50D4900606846 /* MBAttachmentsPickerController.m in Sources */,
