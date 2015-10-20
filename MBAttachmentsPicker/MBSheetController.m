@@ -11,6 +11,7 @@
 #import "MBSheetHostCell.h"
 
 @interface MBSheetController() <UICollectionViewDataSource, UICollectionViewDelegate>
+@property (nonatomic, strong) NSArray *items;
 @end
 
 @implementation MBSheetController

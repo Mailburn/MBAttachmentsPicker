@@ -95,6 +95,11 @@
     [super viewDidLayoutSubviews];
     
     self.backgroundView.frame = self.view.bounds;
+    
+    CGFloat sheetHeight = self.sheetController.preferredSheetHeight;
+    CGSize sheetSize = CGSizeMake(self.view.bounds.size.width, sheetHeight);
+    
+    self.sheetCollectionView.frame = CGRectMake(CGRectGetMinX(self.view.bounds), CGRectGetMaxY(self.view.bounds), sheetSize.width, sheetSize.height);
 }
 
 #pragma mark - Actions

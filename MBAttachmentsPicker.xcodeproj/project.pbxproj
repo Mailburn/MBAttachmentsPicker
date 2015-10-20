@@ -86,6 +86,7 @@
 		4041F2EE1BD6DB6A006136FB /* MBSheetCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSheetCollectionViewLayout.m; sourceTree = "<group>"; };
 		4041F2F01BD6DC67006136FB /* MBSheetHostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSheetHostCell.h; sourceTree = "<group>"; };
 		4041F2F11BD6DC67006136FB /* MBSheetHostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSheetHostCell.m; sourceTree = "<group>"; };
+		4041F2F31BD6DEAE006136FB /* MBPickerDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBPickerDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +139,8 @@
 		4040885A1BD50B7E00606846 /* MBAttachmentsPicker */ = {
 			isa = PBXGroup;
 			children = (
+				4041F2F31BD6DEAE006136FB /* MBPickerDefines.h */,
+				4041F2E81BD6C6D7006136FB /* MBPickerProtocols.h */,
 				4040889C1BD50FD600606846 /* AttachmentsPicker */,
 				404088941BD50F7B00606846 /* SheetController */,
 				404088BC1BD571A300606846 /* Example */,
@@ -193,7 +196,6 @@
 		4040889C1BD50FD600606846 /* AttachmentsPicker */ = {
 			isa = PBXGroup;
 			children = (
-				4041F2E81BD6C6D7006136FB /* MBPickerProtocols.h */,
 				4041F2E51BD6C6A3006136FB /* MBPickerAnimationController.h */,
 				4041F2E61BD6C6A3006136FB /* MBPickerAnimationController.m */,
 				4040888E1BD50D4900606846 /* MBAttachmentsPickerController.h */,

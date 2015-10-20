@@ -11,4 +11,7 @@
 
 @interface MBSheetController : NSObject
 @property (nonatomic, strong) UICollectionView *collectionView;
+
+- (CGFloat)preferredSheetHeight;
+
 @end
