@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface MBSheetController : NSObject
-
+@property (nonatomic, strong) UICollectionView *collectionView;
 @end

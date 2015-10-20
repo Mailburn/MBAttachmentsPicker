@@ -17,11 +17,12 @@
 		404088901BD50D4900606846 /* MBAttachmentsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4040888F1BD50D4900606846 /* MBAttachmentsPickerController.m */; settings = {ASSET_TAGS = (); }; };
 		404088931BD50DB600606846 /* MBSheetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 404088921BD50DB600606846 /* MBSheetAction.m */; settings = {ASSET_TAGS = (); }; };
 		404088981BD50F9300606846 /* MBSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404088971BD50F9300606846 /* MBSheetController.m */; settings = {ASSET_TAGS = (); }; };
-		4040889B1BD50FA200606846 /* MBPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4040889A1BD50FA200606846 /* MBPreviewController.m */; settings = {ASSET_TAGS = (); }; };
 		4040889F1BD50FF500606846 /* MBAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4040889E1BD50FF500606846 /* MBAttachment.m */; settings = {ASSET_TAGS = (); }; };
 		404088BB1BD51CE300606846 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 404088AF1BD51CE300606846 /* libOCMock.a */; settings = {ASSET_TAGS = (); }; };
 		4041F2E71BD6C6A3006136FB /* MBPickerAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041F2E61BD6C6A3006136FB /* MBPickerAnimationController.m */; settings = {ASSET_TAGS = (); }; };
 		4041F2EC1BD6D674006136FB /* MBFunctionalExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041F2EA1BD6D674006136FB /* MBFunctionalExtensions.m */; settings = {ASSET_TAGS = (); }; };
+		4041F2EF1BD6DB6A006136FB /* MBSheetCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041F2EE1BD6DB6A006136FB /* MBSheetCollectionViewLayout.m */; settings = {ASSET_TAGS = (); }; };
+		4041F2F21BD6DC67006136FB /* MBSheetHostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041F2F11BD6DC67006136FB /* MBSheetHostCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +64,6 @@
 		404088921BD50DB600606846 /* MBSheetAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSheetAction.m; sourceTree = "<group>"; };
 		404088961BD50F9300606846 /* MBSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSheetController.h; sourceTree = "<group>"; };
 		404088971BD50F9300606846 /* MBSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSheetController.m; sourceTree = "<group>"; };
-		404088991BD50FA200606846 /* MBPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPreviewController.h; sourceTree = "<group>"; };
-		4040889A1BD50FA200606846 /* MBPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPreviewController.m; sourceTree = "<group>"; };
 		4040889D1BD50FF500606846 /* MBAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAttachment.h; sourceTree = "<group>"; };
 		4040889E1BD50FF500606846 /* MBAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAttachment.m; sourceTree = "<group>"; };
 		404088AF1BD51CE300606846 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Vendor/libOCMock.a; sourceTree = "<group>"; };
@@ -83,6 +82,10 @@
 		4041F2E81BD6C6D7006136FB /* MBPickerProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBPickerProtocols.h; sourceTree = "<group>"; };
 		4041F2EA1BD6D674006136FB /* MBFunctionalExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBFunctionalExtensions.m; path = MBAttachmentsPicker/Vendor/MBFunctionalExtensions.m; sourceTree = "<group>"; };
 		4041F2EB1BD6D674006136FB /* MBFunctionalExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBFunctionalExtensions.h; path = MBAttachmentsPicker/Vendor/MBFunctionalExtensions.h; sourceTree = "<group>"; };
+		4041F2ED1BD6DB6A006136FB /* MBSheetCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSheetCollectionViewLayout.h; sourceTree = "<group>"; };
+		4041F2EE1BD6DB6A006136FB /* MBSheetCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSheetCollectionViewLayout.m; sourceTree = "<group>"; };
+		4041F2F01BD6DC67006136FB /* MBSheetHostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSheetHostCell.h; sourceTree = "<group>"; };
+		4041F2F11BD6DC67006136FB /* MBSheetHostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSheetHostCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				4040889C1BD50FD600606846 /* AttachmentsPicker */,
-				404088951BD50F8100606846 /* PreviewController */,
 				404088941BD50F7B00606846 /* SheetController */,
 				404088BC1BD571A300606846 /* Example */,
 				404088641BD50B7E00606846 /* Main.storyboard */,
@@ -180,17 +182,12 @@
 			children = (
 				404088961BD50F9300606846 /* MBSheetController.h */,
 				404088971BD50F9300606846 /* MBSheetController.m */,
+				4041F2ED1BD6DB6A006136FB /* MBSheetCollectionViewLayout.h */,
+				4041F2EE1BD6DB6A006136FB /* MBSheetCollectionViewLayout.m */,
+				4041F2F01BD6DC67006136FB /* MBSheetHostCell.h */,
+				4041F2F11BD6DC67006136FB /* MBSheetHostCell.m */,
 			);
 			name = SheetController;
-			sourceTree = "<group>";
-		};
-		404088951BD50F8100606846 /* PreviewController */ = {
-			isa = PBXGroup;
-			children = (
-				404088991BD50FA200606846 /* MBPreviewController.h */,
-				4040889A1BD50FA200606846 /* MBPreviewController.m */,
-			);
-			name = PreviewController;
 			sourceTree = "<group>";
 		};
 		4040889C1BD50FD600606846 /* AttachmentsPicker */ = {
@@ -380,13 +377,14 @@
 				404088631BD50B7E00606846 /* ViewController.m in Sources */,
 				4041F2EC1BD6D674006136FB /* MBFunctionalExtensions.m in Sources */,
 				4040889F1BD50FF500606846 /* MBAttachment.m in Sources */,
-				4040889B1BD50FA200606846 /* MBPreviewController.m in Sources */,
+				4041F2F21BD6DC67006136FB /* MBSheetHostCell.m in Sources */,
 				404088601BD50B7E00606846 /* AppDelegate.m in Sources */,
 				4040885D1BD50B7E00606846 /* main.m in Sources */,
 				4041F2E71BD6C6A3006136FB /* MBPickerAnimationController.m in Sources */,
 				404088931BD50DB600606846 /* MBSheetAction.m in Sources */,
 				404088981BD50F9300606846 /* MBSheetController.m in Sources */,
 				404088901BD50D4900606846 /* MBAttachmentsPickerController.m in Sources */,
+				4041F2EF1BD6DB6A006136FB /* MBSheetCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,12 @@
 
 #import "MBAttachmentsPickerController.h"
 #import "MBPickerAnimationController.h"
+#import "MBSheetController.h"
 
 @interface MBAttachmentsPickerController () <UIViewControllerTransitioningDelegate>
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, strong) id<MBPickerAnimationProtocol> animationController;
+@property (nonatomic, strong) MBSheetController *sheetController;
 @end
 
 @implementation MBAttachmentsPickerController
@@ -50,6 +52,22 @@
     self.transitioningDelegate = self;
 }
 
+#pragma mark - Getters
+
+- (MBSheetController *)sheetController
+{
+    if (_sheetController == nil) {
+        _sheetController = [[MBSheetController alloc] init];
+    }
+    
+    return _sheetController;
+}
+
+- (UICollectionView *)sheetCollectionView
+{
+    return self.sheetController.collectionView;
+}
+
 #pragma mark - Loading cycle
 
 - (void)loadView
@@ -58,6 +76,7 @@
     
     self.view.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.backgroundView];
+    [self.view addSubview:self.sheetCollectionView];
 }
 
 - (UIView *)backgroundView
