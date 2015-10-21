@@ -31,6 +31,11 @@
     return _collectionView;
 }
 
+- (CGFloat)preferredSheetHeight
+{
+    return 0.f;
+}
+
 #pragma mark - UICollectionViewDelegate
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
