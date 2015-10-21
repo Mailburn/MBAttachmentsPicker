@@ -64,12 +64,12 @@
         return 1;
     }
     
-    return 14;//[self.items count];
+    return 7;//[self.items count];
 }
 
 - (CGSize)sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(320, 20);
+    return CGSizeMake(320, 40);
 }
 
 
@@ -78,7 +78,6 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     MBSheetHostCell *cell = (MBSheetHostCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([MBSheetHostCell class]) forIndexPath:indexPath];
-    cell.contentView.backgroundColor = [UIColor colorWithWhite:arc4random() % 255 alpha:1];
 
     return cell;
 }
