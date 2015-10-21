@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "MBSheetItem.h"
 
 typedef void(^MBActionHandler)();
 
@@ -18,7 +19,7 @@ typedef NS_ENUM(NSInteger, MBSheetActionStyle)
     MBSheetActionStyleDestructive = 2
 };
 
-@interface MBSheetAction : NSObject
+@interface MBSheetAction : MBSheetItem
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) UIImage *thumbnail;
 @property (nonatomic, strong) MBActionHandler handler;

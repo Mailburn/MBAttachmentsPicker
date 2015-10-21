@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MBSheetHostCell : UICollectionViewCell
-
+@property (nonatomic, strong) UIView *view;
 @end
