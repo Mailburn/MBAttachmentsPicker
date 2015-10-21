@@ -25,7 +25,7 @@
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.accessibilityIdentifier = @"SheetCollectionView";
-        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.backgroundColor = [UIColor clearColor];
         _collectionView.alwaysBounceVertical = YES;
         [_collectionView registerClass:[MBSheetHostCell class] forCellWithReuseIdentifier:NSStringFromClass([MBSheetHostCell class])];
     }
