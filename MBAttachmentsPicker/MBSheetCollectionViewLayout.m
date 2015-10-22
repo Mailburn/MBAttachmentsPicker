@@ -39,6 +39,8 @@
     id<UICollectionViewDataSource> dataSource = self.collectionView.dataSource;
     id<UICollectionViewDelegateFlowLayout> delegate = (id<UICollectionViewDelegateFlowLayout>)self.collectionView.delegate;
     
+    CGFloat contentHeight = 0.f;
+    
     if ((delegate) && (dataSource)) {
         NSInteger sections = [dataSource numberOfSectionsInCollectionView:self.collectionView];
         CGPoint origin = CGPointZero;
@@ -53,17 +55,32 @@
                 CGSize size = [delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
                 
                 UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-                attributes.frame = CGRectMake(origin.x, origin.y, size.width, size.height);
+                
+                CGFloat centerX = origin.x;
+                CGFloat centerY = CGRectGetHeight(self.collectionView.bounds) - size.height * (indexPath.item + 1) - [self offsetWithSize:size indexPath:indexPath];
+                
+                attributes.frame = CGRectMake(centerX, centerY, size.width, size.height);
                 
                 [sectionAttributes addObject:attributes];
-                origin.y = CGRectGetMaxY(attributes.frame);
+                contentHeight += attributes.frame.size.height + [self offsetWithSize:size indexPath:indexPath];
             }
             
             [self.layoutAttributes addObject:sectionAttributes];
         }
         
-        self.contentSize = CGSizeMake(self.collectionView.frame.size.width, origin.y);
+        self.contentSize = CGSizeMake(self.collectionView.frame.size.width, contentHeight);
     }
+}
+
+- (CGFloat)offsetWithSize:(CGSize)size indexPath:(NSIndexPath *)indexPath
+{
+    NSInteger section = indexPath.section;
+    if (section == 0) {
+        return 0.f;
+    }
+    
+    NSInteger numberOfRows = [self.collectionView numberOfItemsInSection:section - 1];
+    return numberOfRows * size.height + 5.f;
 }
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds

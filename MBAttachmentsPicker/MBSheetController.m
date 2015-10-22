@@ -18,6 +18,14 @@
 
 @implementation MBSheetController
 
+- (instancetype)init
+{
+    if (self = [super init]) {
+        _defaultInset = 4.f;
+    }
+    return self;
+}
+
 - (UICollectionView *)collectionView
 {
     if (_collectionView == nil) {
@@ -25,7 +33,7 @@
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.accessibilityIdentifier = @"SheetCollectionView";
-        _collectionView.backgroundColor = [UIColor clearColor];
+        _collectionView.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.3];
         _collectionView.alwaysBounceVertical = YES;
         [_collectionView registerClass:[MBSheetHostCell class] forCellWithReuseIdentifier:NSStringFromClass([MBSheetHostCell class])];
     }
@@ -56,6 +64,15 @@
     } initial:@0];
     
     return [height floatValue];
+}
+
+- (CGFloat)preferredSheetWidth
+{
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_8_3) {
+        return self.collectionView.bounds.size.width - 2 * self.defaultInset;
+    } else {
+        return self.collectionView.bounds.size.width;
+    }
 }
 
 - (NSInteger)numberOfItemsInSection:(NSInteger)section
@@ -96,7 +113,10 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 3;
+    if (section == 0) {
+        return 2;
+    }
+    return 1;
 }
 
 #pragma mark - UICollectionViewFlowLayoutDelegate

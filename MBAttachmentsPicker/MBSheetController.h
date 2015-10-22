@@ -11,7 +11,9 @@
 
 @interface MBSheetController : NSObject
 @property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, assign) CGFloat defaultInset;
 
 - (CGFloat)preferredSheetHeight;
+- (CGFloat)preferredSheetWidth;
 
 @end

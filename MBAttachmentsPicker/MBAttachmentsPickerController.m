@@ -84,7 +84,7 @@
     if (_backgroundView == nil)
     {
         _backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
-        _backgroundView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.3];
+        _backgroundView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.65];
     }
 
     return _backgroundView;
