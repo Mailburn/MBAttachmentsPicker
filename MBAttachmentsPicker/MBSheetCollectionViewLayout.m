@@ -57,7 +57,7 @@
                 UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
                 
                 CGFloat centerX = origin.x;
-                CGFloat centerY = CGRectGetHeight(self.collectionView.bounds) - size.height * (indexPath.item + 1) - [self offsetWithSize:size indexPath:indexPath];
+                CGFloat centerY = size.height * indexPath.item + [self offsetWithSize:size indexPath:indexPath];
                 
                 attributes.frame = CGRectMake(centerX, centerY, size.width, size.height);
                 
